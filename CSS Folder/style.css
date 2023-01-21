@@ -1,0 +1,31 @@
+header{
+    text-align: center;
+    background-color: aliceblue;
+}
+h1{
+    font-size: xx-large;
+}
+li{
+    align-content: center;
+    padding: 1;
+    margin: 1;
+    border-color: blueviolet;
+    display: inline;
+}
+body{
+    background-image: url(https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHNwYWNlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60);
+    min-height: 100;
+    display: flex;
+    flex-direction:column;
+}
+article{
+    color: ivory;
+}
+p{
+    color: ivory;
+    text-align: center;
+}
+footer{
+    margin-top: auto;
+
+}
