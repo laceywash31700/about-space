@@ -9,7 +9,7 @@
 // else take user to cartoon network.
 let m1 = confirm('Do you think space is dope?');
 let m2 = confirm('DOPE WE LIKE SPACE TOO! Did you want to check out my ugly website about space?');
-let m3 = age = prompt("how old are you?");
+let m3 = prompt("how old are you?");
 let m4 = confirm('get out then');
 
 if (m1 === true) {  
@@ -29,5 +29,7 @@ else if (m2 === true) {
     return m3
 
 }
-else if (m3 < 12 ){ alert("no way jose?"); 
+else if (m3 < 12 ){ 
+    alert("no way jose?"); 
+    parseInt(m3);
 }
