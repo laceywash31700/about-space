@@ -12,22 +12,20 @@ function entersite() {
     let m1 = confirm('Do you think space is dope?');
     let m2;
     let m3;
-    let m4;
 
     if (m1 === true) {
         m2 = confirm('DOPE WE LIKE SPACE TOO! Did you want to check out my ugly website about space?');
         if (m2) {
             m3 = prompt("how old are you?");
-            while (parseInt(m3) < 12 && m3) {
+            m3 =parseInt(m3);
+            while (m3 > 0 && m3 <12) {
                 m3 = prompt("how old are you?");
             }
         } else {
-            m4 = confirm('get out then');
+            entersite();
         }
     }
     else {
-        m4 = confirm('get out then');
-       while(m4 === false && m4);
-        }
+        entersite();
     }
-entersite()
+}
