@@ -7,29 +7,27 @@
 // should input value as a number
 //  if (age <  12) site should open
 // else take user to cartoon network.
-let m1 = confirm('Do you think space is dope?');
-let m2 = confirm('DOPE WE LIKE SPACE TOO! Did you want to check out my ugly website about space?');
-let m3 = prompt("how old are you?");
-let m4 = confirm('get out then');
+function entersite() {
 
-if (m1 === true) {  
-    return m2
-}
- else if (m1 === false) {
-    return m4
-}
+    let m1 = confirm('Do you think space is dope?');
+    let m2;
+    let m3;
+    let m4;
 
-else if (m4 === false) { 
-    return m2
-}
-else if (m2 === false) { 
-    return m4
-}
-else if (m2 === true) { 
-    return m3
-
-}
-else if (m3 < 12 ){ 
-    alert("no way jose?"); 
-    parseInt(m3);
-}
+    if (m1 === true) {
+        m2 = confirm('DOPE WE LIKE SPACE TOO! Did you want to check out my ugly website about space?');
+        if (m2) {
+            m3 = prompt("how old are you?");
+            while (parseInt(m3) < 12 && m3) {
+                m3 = prompt("how old are you?");
+            }
+        } else {
+            m4 = confirm('get out then');
+        }
+    }
+    else {
+        m4 = confirm('get out then');
+       while(m4 === false && m4);
+        }
+    }
+entersite()
